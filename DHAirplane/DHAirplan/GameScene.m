@@ -83,6 +83,10 @@
     SKAction *updateEnimies = [SKAction sequence:@[wait,callEnemies]];
     [self runAction:[SKAction repeatActionForever:updateEnimies]];
     
+    //physics
+    self.physicsWorld.gravity = CGVectorMake(0, 0);
+    self.physicsWorld.contactDelegate = self;
+    
 }
 
 -(void)outputAccelertionData:(CMAcceleration)acceleration
@@ -150,6 +154,12 @@
         
         CGPathRelease(cgpath);
         
+        
+        enemy.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:enemy.size];
+        enemy.physicsBody.dynamic = YES;
+        enemy.physicsBody.categoryBitMask = enemyCategory;
+        enemy.physicsBody.contactTestBitMask = bulletCategory;
+        enemy.physicsBody.collisionBitMask = 0;
     }
     
 }
@@ -160,7 +170,33 @@
 }
 
 
-
+-(void)didBeginContact:(SKPhysicsContact *)contact{
+    
+    SKPhysicsBody *firstBody;
+    SKPhysicsBody *secondBody;
+    
+    if (contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask)
+    {
+        firstBody = contact.bodyA;
+        secondBody = contact.bodyB;
+    }
+    else
+    {
+        firstBody = contact.bodyB;
+        secondBody = contact.bodyA;
+    }
+    
+    if ((firstBody.categoryBitMask & bulletCategory) != 0)
+    {
+        
+        SKNode *projectile = (contact.bodyA.categoryBitMask & bulletCategory) ? contact.bodyA.node : contact.bodyB.node;
+        SKNode *enemy = (contact.bodyA.categoryBitMask & bulletCategory) ? contact.bodyB.node : contact.bodyA.node;
+        [projectile runAction:[SKAction removeFromParent]];
+        [enemy runAction:[SKAction removeFromParent]];
+        
+    }
+    
+}
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
@@ -180,8 +216,17 @@
     
     [bullet runAction:[SKAction sequence:@[action,remove]]];
     
+    
+    bullet.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:bullet.size];
+    bullet.physicsBody.dynamic = NO;
+    bullet.physicsBody.categoryBitMask = bulletCategory;
+    bullet.physicsBody.contactTestBitMask = enemyCategory;
+    bullet.physicsBody.collisionBitMask = 0;
+    
     [self addChild:bullet];
 }
+
+
 
 -(void)update:(NSTimeInterval)currentTime{
     //NSLog(@"one second");
