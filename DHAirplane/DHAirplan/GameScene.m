@@ -87,6 +87,15 @@
     self.physicsWorld.gravity = CGVectorMake(0, 0);
     self.physicsWorld.contactDelegate = self;
     
+    
+    //load explosions
+    SKTextureAtlas *explosionAtlas = [SKTextureAtlas atlasNamed:@"EXPLOSION"];
+    NSArray *textureNames = [explosionAtlas textureNames];
+    _explosionTextures = [NSMutableArray new];
+    for (NSString *name in textureNames) {
+        SKTexture *texture = [explosionAtlas textureNamed:name];
+        [_explosionTextures addObject:texture];
+    }
 }
 
 -(void)outputAccelertionData:(CMAcceleration)acceleration
@@ -194,8 +203,18 @@
         [projectile runAction:[SKAction removeFromParent]];
         [enemy runAction:[SKAction removeFromParent]];
         
+        //add explosion
+        SKSpriteNode *explosion = [SKSpriteNode spriteNodeWithTexture:[_explosionTextures objectAtIndex:0]];
+        explosion.zPosition = 1;
+        explosion.scale = 0.6;
+        explosion.position = contact.bodyA.node.position;
+        
+        [self addChild:explosion];
+        
+        SKAction *explosionAction = [SKAction animateWithTextures:_explosionTextures timePerFrame:0.07];
+        SKAction *remove = [SKAction removeFromParent];
+        [explosion runAction:[SKAction sequence:@[explosionAction,remove]]];
     }
-    
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
