@@ -1,0 +1,448 @@
+{\rtf1\ansi\ansicpg936\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Cochin;\f2\fnil\fcharset0 HelveticaNeue;
+\f3\fswiss\fcharset0 ArialMT;\f4\fnil\fcharset0 Monaco;\f5\fnil\fcharset0 HelveticaNeue-Medium;
+}
+{\colortbl;\red255\green255\blue255;\red30\green30\blue30;\red210\green43\blue51;\red32\green41\blue52;
+\red254\green254\blue254;\red19\green87\blue199;\red58\green58\blue58;\red48\green53\blue57;\red243\green245\blue246;
+\red191\green191\blue191;\red251\green0\blue129;\red0\green0\blue255;\red23\green35\blue44;\red193\green193\blue193;
+\red100\green100\blue100;\red2\green29\blue45;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid101\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid201\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 \
+\
+\pard\pardeftab720\sl825
+
+\b\fs66 \cf2 \expnd0\expndtw0\kerning0
+How to create a simple game using Sprite Kit : Rebuilding AppForCats\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\pardeftab720\fi360\sl288\slmult1\pardirnatural
+
+\f1\b0\fs28 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\pardeftab720\fi360\sl288\slmult1\pardirnatural
+{\field{\*\fldinst{HYPERLINK "http://e-string.com/articles/create-simple-game-using-sprite-kit/"}}{\fldrslt \cf0 http://e-string.com/articles/create-simple-game-using-sprite-kit/}}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\li720\pardirnatural
+
+\f0\fs20 \cf2 \expnd0\expndtw0\kerning0
+And finally, some tips to keep in mind:\
+\kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Keep the concept simple. At least your first app. Don\'92t let it get so complicated that you don\'92t finish it.\
+\kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Get an artist. Don\'92t be afraid to create your own temporary programmer art but good artwork does wonders.\
+\kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Keep a consistent naming convention for your assets (images, particles, sounds, music, etc). Makes it so much easier to find what you need.\
+\kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Animate everything.\
+\kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Add sounds for everything.\
+\kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+And most of all. Have Fun!\
+I hope you have enjoyed this quick intro and want to learn more. If so I suggest you check out Apple\'92s {\field{\*\fldinst{HYPERLINK "https://developer.apple.com/LIBRARY/IOS/documentation/GraphicsAnimation/Conceptual/SpriteKit_PG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013043-CH1-SW1"}}{\fldrslt \cf3 \expnd0\expndtw0\kerning0
+\ul \ulc3 Sprite Kit Programming Guide}}and Ray Wenderlich\'92s {\field{\*\fldinst{HYPERLINK "http://www.raywenderlich.com/store/ios-games-by-tutorials"}}{\fldrslt \cf3 \expnd0\expndtw0\kerning0
+\ul \ulc3 iOS Games by tutorials}}.\
+Thanks.\
+
+\b \kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Source Code\'a0{\field{\*\fldinst{HYPERLINK "http://e-string.com/wp-content/uploads/2013/12/AppForCatsTutorial.zip"}}{\fldrslt 
+\b0 \cf3 \expnd0\expndtw0\kerning0
+\ul \ulc3 AppForCatsTutorial}}
+\b0 \expnd0\expndtw0\kerning0
+\
+
+\b \kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Assets\'a0{\field{\*\fldinst{HYPERLINK "http://e-string.com/wp-content/uploads/2013/12/AppForCatsTutorialAssets.zip"}}{\fldrslt 
+\b0 \cf3 \expnd0\expndtw0\kerning0
+\ul \ulc3 AppForCatsTutorialAssets}}
+\b0 \expnd0\expndtw0\kerning0
+\
+
+\b \kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Slides
+\b0 \expnd0\expndtw0\kerning0
+\'a0{\field{\*\fldinst{HYPERLINK "http://e-string.com/wp-content/uploads/2013/12/Intro-to-SpriteKit.zip"}}{\fldrslt \cf3 \expnd0\expndtw0\kerning0
+\ul \ulc3 Intro to SpriteKit}}\cf3 \expnd0\expndtw0\kerning0
+\ul \ulc3 \
+\cf2 \expnd0\expndtw0\kerning0
+\ulnone \
+\pard\tx560\pardeftab720\sl480\sa200
+
+\fs32 \cf2 \expnd0\expndtw0\kerning0
+\
+\
+\pard\pardeftab720\sl980\sa200
+
+\f2\b\fs98 \cf4 \cb5 \expnd0\expndtw0\kerning0
+Build an Airplane Game with Sprite Kit - Enemies & Emitters\
+\pard\tx560\pardeftab720\sl480\sa200
+{\field{\*\fldinst{HYPERLINK "http://code.tutsplus.com/tutorials/build-an-airplane-game-with-sprite-kit-project-setup--mobile-19891"}}{\fldrslt 
+\f0\b0\fs32 \cf2 \cb1 \expnd0\expndtw0\kerning0
+http://code.tutsplus.com/tutorials/build-an-airplane-game-with-sprite-kit-project-setup--mobile-19891}}
+\f0\b0\fs32 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\tx560\pardeftab720\sl480\sa200
+{\field{\*\fldinst{HYPERLINK "http://code.tutsplus.com/tutorials/build-an-airplane-game-with-sprite-kit-enemies-emitters--mobile-19916"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+http://code.tutsplus.com/tutorials/build-an-airplane-game-with-sprite-kit-enemies-emitters--mobile-19916}}  \
+\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl512
+\ls1\ilvl0
+\f3 \cf6 \cb5 \kerning1\expnd0\expndtw0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "http://mobile.tutsplus.com/?p=19891"}}{\fldrslt \expnd0\expndtw0\kerning0
+Build an Airplane Game with Sprite Kit - Project Setup}}\cf7 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl512
+\ls1\ilvl0\cf6 \cb5 \kerning1\expnd0\expndtw0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "http://mobile.tutsplus.com/?p=19916"}}{\fldrslt \expnd0\expndtw0\kerning0
+Build an Airplane Game with Sprite Kit - Enemies & Emitters}}\cf7 \cb1 \expnd0\expndtw0\kerning0
+\
+\ls1\ilvl0\cf6 \cb5 \kerning1\expnd0\expndtw0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "http://mobile.tutsplus.com/?p=19933"}}{\fldrslt \expnd0\expndtw0\kerning0
+Build an Airplane Game with Sprite Kit - Explosions & Clouds}}\cf7 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\tx560\pardeftab720\sl480\sa200
+
+\f0 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\li720\pardirnatural
+
+\f2\b\fs20 \cf7 \cb5 \expnd0\expndtw0\kerning0
+Conclusion\
+
+\f3\b0 \expnd0\expndtw0\kerning0
+That's the end of the first tutorial! At this point, you should understand how to perform the following tasks:\
+\kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Start a Sprite Kit project\cb1 \expnd0\expndtw0\kerning0
+\
+\cb5 \kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Add a sprite to the Scene\cb1 \expnd0\expndtw0\kerning0
+\
+\cb5 \kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Implement simple animations\cb1 \expnd0\expndtw0\kerning0
+\
+\cb5 \kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Receive accelerometer data\cb1 \expnd0\expndtw0\kerning0
+\
+\cb5 \kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Update game and object data\cb1 \expnd0\expndtw0\kerning0
+\
+\cb5 \expnd0\expndtw0\kerning0
+If any of the above is still "fuzzy", take another look at the code we created above. Stay tuned for the next installment in this series where we will continue to build our airplane game!\
+\pard\tx560\pardeftab720\sl480\sa200
+
+\f0\fs32 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\li720\pardirnatural
+
+\f2\fs20 \cf8 \expnd0\expndtw0\kerning0
+Awesome tutorial! This is the perfect way to start my SpriteKit journey. Anyhow, I made a couple improvements with the code, first I ported the iOS version to Mac, so player can play in their Macs using keyboard (using arrows and spacebar). Second, I went on building a usb xbox controller wrapper for objective-c. So now, I can play this game using an xbox gamepad (I'm using the cheap one from madcatz).\
+Check out my improvements here : {\field{\*\fldinst{HYPERLINK "https://github.com/ixnixnixn/AirplaneShooter"}}{\fldrslt \cf6 \expnd0\expndtw0\kerning0
+Airplane Shooter for Mac}} and the xbox controller objective c wrapper, {\field{\*\fldinst{HYPERLINK "https://github.com/ixnixnixn/IXNXBOXDrumpad"}}{\fldrslt \cf6 \expnd0\expndtw0\kerning0
+IXNXBOXDrumpad}}.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\li720\pardirnatural
+
+\f0 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\li720\pardirnatural
+
+\f3 \cf7 \cb5 \expnd0\expndtw0\kerning0
+Particles are used to achieve many different types of effects like fire, smoke, magic, rain, snow, or waterfalls. \
+Fortunately, Xcode 5 introduced an Emitter Editor as a builtin feature\
+\
+Not only do you need to create enemies, but you also need to define a random path for each in order to simulate a real battlefield. To achieve this, you will use the action
+\f4 \cb9 \expnd0\expndtw0\kerning0
+followPath
+\f3 \cb5 \expnd0\expndtw0\kerning0
+. You will create random paths (with CGPath) and then each enemy will move over that path.\
+One great method that we had to do this with Cocos2D was 
+\f4 \cb9 \expnd0\expndtw0\kerning0
+schedule:interval:
+\f3 \cb5 \expnd0\expndtw0\kerning0
+. Unfortunately, Apple did not add a similar method to Sprite Kit, but it is easy to create a similar one using 
+\f4 \cb9 \expnd0\expndtw0\kerning0
+SKActions
+\f3 \cb5 \expnd0\expndtw0\kerning0
+. To achieve this schedule, we need to create an 
+\f4 \cb9 \expnd0\expndtw0\kerning0
+SKAction
+\f3 \cb5 \expnd0\expndtw0\kerning0
+ calling for a method 
+\f4 \cb9 \expnd0\expndtw0\kerning0
+waitForDuration
+\f3 \cb5 \expnd0\expndtw0\kerning0
+. After that, we will create an SKAction that can run a block and use it to call the method that adds enemies. Then, we'll put these two actions on a sequence and just say to repeat it over time.\
+\
+Now you must add the method that creates the movement paths for the enemies to follow. We choose to use the 
+\f4 \cb9 \expnd0\expndtw0\kerning0
+CGPathAddCurveToPoint
+\f3 \cb5 \expnd0\expndtw0\kerning0
+, since this method creates a B\'e9zier curve with two control points. The following image explains how this works:\
+The essence of this method is generating random values. First, it will decide if a new enemy will be released, then it creates its position. Afterward, it creates the enemy control points, and, finally, the actions are created.\
+\
+\pard\pardeftab720\sl512
+
+\fs32 \cf7 \expnd0\expndtw0\kerning0
+\
+
+\f0 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\li720\pardirnatural
+
+\f2\b\fs20 \cf10 \cb5 \expnd0\expndtw0\kerning0
+3.\cf7 \expnd0\expndtw0\kerning0
+ Create Airplane Bullets\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\li720\pardirnatural
+
+\f3\b0 \cf7 \expnd0\expndtw0\kerning0
+To make the game fun, our enemies need to be destroyable. You will add some bullets to your airplane to achieve this. To do this, we'll need to do the following:\
+\kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Get the current airplane position\cb1 \expnd0\expndtw0\kerning0
+\
+\cb5 \kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Create the bullet sprite\cb1 \expnd0\expndtw0\kerning0
+\
+\cb5 \kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Create the action to move the bullet\cb1 \expnd0\expndtw0\kerning0
+\
+\cb5 \kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Create the action to remove the bullet\cb1 \expnd0\expndtw0\kerning0
+\
+\cb5 \kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Add the bullet to the screen\cb1 \expnd0\expndtw0\kerning0
+\
+
+\f2\b \cb5 \expnd0\expndtw0\kerning0
+Conclusion
+\f0\b0\fs32 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+
+\f3\fs20 \cf7 \cb5 \expnd0\expndtw0\kerning0
+You've reached the end of the second tutorial in our series.\
+At this point, you should understand and be able to perform the following tasks:\
+\kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Create an Emitter\cb1 \expnd0\expndtw0\kerning0
+\
+\cb5 \kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Add bullets to sprites\cb1 \expnd0\expndtw0\kerning0
+\
+\cb5 \kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Create b\'e9zier paths for sprite movement\cb1 \expnd0\expndtw0\kerning0
+\
+\cb5 \expnd0\expndtw0\kerning0
+Stay tuned for the next installment in this series, where we will continue to build our airplane game!\
+\pard\tx560\pardeftab720\sl480\sa200
+
+\f0\fs32 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\li720\pardirnatural
+
+\fs20 \cf2 \expnd0\expndtw0\kerning0
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\li720\pardirnatural
+
+\f2\b \cf7 \cb5 \expnd0\expndtw0\kerning0
+Adding Collision Detection\
+
+\f3\b0 \expnd0\expndtw0\kerning0
+Intersection tests are frequently used in environments where more than one object exists. In Sprite Kit, you will use Collisions and Contacts to detect if a given object hit another object.\
+In this game, you will use collision detection. When a bullet makes contact with one enemy, both the bullet and the enemy will be removed from the screen.\
+\
+To do this, you need to define the category mask values. There should be one category for each physics object. In 
+\f4 \cb9 \expnd0\expndtw0\kerning0
+MyScene.h
+\f3 \cb5 \expnd0\expndtw0\kerning0
+, add the following code:\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\li720\pardirnatural
+
+\f4 \cf11 \cb9 \expnd0\expndtw0\kerning0
+static\cf7 \expnd0\expndtw0\kerning0
+ \cf11 \expnd0\expndtw0\kerning0
+const\cf7 \expnd0\expndtw0\kerning0
+ \cf0 \expnd0\expndtw0\kerning0
+uint\cf12 \expnd0\expndtw0\kerning0
+8\cf0 \expnd0\expndtw0\kerning0
+_t bulletCategory = \cf12 \expnd0\expndtw0\kerning0
+1\cf0 \expnd0\expndtw0\kerning0
+;\cf7 \expnd0\expndtw0\kerning0
+\
+\cf11 \expnd0\expndtw0\kerning0
+static\cf7 \expnd0\expndtw0\kerning0
+ \cf11 \expnd0\expndtw0\kerning0
+const\cf7 \expnd0\expndtw0\kerning0
+ \cf0 \expnd0\expndtw0\kerning0
+uint\cf12 \expnd0\expndtw0\kerning0
+8\cf0 \expnd0\expndtw0\kerning0
+_t enemyCategory = \cf12 \expnd0\expndtw0\kerning0
+2\cf0 \expnd0\expndtw0\kerning0
+;\cf7 \expnd0\expndtw0\kerning0
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\li720\pardirnatural
+
+\f0 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl512
+
+\fs32 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\li720\pardirnatural
+
+\f2\b\fs20 \cf10 \cb5 \expnd0\expndtw0\kerning0
+2.\cf7 \expnd0\expndtw0\kerning0
+ Incorporating a Texture Atlas\
+Conclusion\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\li720\pardirnatural
+
+\f3\b0 \cf7 \expnd0\expndtw0\kerning0
+This concludes the third and final tutorial demonstrating how to create an airplanes game using the new Sprite Kit framework available with the iOS 7 SDK. If you've followed this series from start-to-finish, you should now have enough knowledge to create a simple Sprite Kit game using this dynamic new game engine. If you have any questions or comments, please feel free to leave them below!\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\li720\pardirnatural
+
+\f0 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\li720\pardirnatural
+
+\f2\b \cf7 \cb5 \expnd0\expndtw0\kerning0
+Acknowledgements & Recommendations\
+
+\f3\b0 \expnd0\expndtw0\kerning0
+We would like to thank {\field{\*\fldinst{HYPERLINK "http://eatcreatures.com/"}}{\fldrslt \cf6 \expnd0\expndtw0\kerning0
+Daniel Feren\uc0\u269 ak}} for providing us with the game art used to produce this tutorial series.\
+In order to fully appreciate the tutorial series, we advise that you test our code by deploying it to a real device running iOS 7. You will need Xcode 5 and the latest iOS 7 SDK. If you don't already have these tools, you can download them from the {\field{\*\fldinst{HYPERLINK "https://developer.apple.com/"}}{\fldrslt \cf6 \expnd0\expndtw0\kerning0
+Apple Developer Center}}. Once downloaded, install the software and you'll be ready to begin.\
+\pard\tx560\pardeftab720\sl480\sa200
+
+\f0\fs32 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\tx560\pardeftab720\sl480\sa200
+{\field{\*\fldinst{HYPERLINK "https://github.com/ikhsan/AirplaneShooter"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+https://github.com/ikhsan/AirplaneShooter}}\
+\
+{\field{\*\fldinst{HYPERLINK "https://github.com/ikhsan/IXNXBOXDrumpad"}}{\fldrslt \expnd0\expndtw0\kerning0
+https://github.com/ikhsan/IXNXBOXDrumpad}}\
+\pard\pardeftab720\sl420
+
+\f2\fs30 \cf8 \expnd0\expndtw0\kerning0
+Great tutorial! I put it on my list of Sprite Kit tutorials on {\field{\*\fldinst{HYPERLINK "http://www.sprite-kit.com/"}}{\fldrslt \cf6 \expnd0\expndtw0\kerning0
+http://www.sprite-kit.com}}.   
+\f0\fs32 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\tx560\pardeftab720\sl480\sa200
+\cf2 \expnd0\expndtw0\kerning0
+\
+\
+\pard\pardeftab720\sl420\sa300
+
+\f2\fs30 \cf8 \expnd0\expndtw0\kerning0
+Another question: instead of doing so many calculations for the plane, the shadow, the propeller and the smoke separately, why can we just add the shadow, the propeller and the smoke as a child of the plane? so that when the plane position changed, all these child elements will move accordingly?\
+\pard\pardeftab720\sl420
+\cf8 \expnd0\expndtw0\kerning0
+I have posted some code on my blog about this change: {\field{\*\fldinst{HYPERLINK "http://new2objectivec.blogspot.com.au/2013/12/slight-improvement-to-jorge-costa-and.html"}}{\fldrslt \cf6 \expnd0\expndtw0\kerning0
+http://new2objectivec.blogspot...}}\
+\pard\tx560\pardeftab720\sl480\sa200
+
+\f0\fs32 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl420\sa300
+
+\f2\fs30 \cf8 \expnd0\expndtw0\kerning0
+Hello,\
+\pard\pardeftab720\sl420
+\cf8 \expnd0\expndtw0\kerning0
+This is a really good improvement :) I don't thing about that possibility and it's really good for improve all the code and computations around the airplane actions and animations. Thanks man! ;)\
+\pard\tx560\pardeftab720\sl480\sa200
+
+\f0\fs32 \cf2 \expnd0\expndtw0\kerning0
+\
+\
+\pard\pardeftab720\sl300\sa300
+{\field{\*\fldinst{HYPERLINK "https://github.com/MHaroonBaig/MotionKit"}}{\fldrslt 
+\f2\fs30 \cf6 \expnd0\expndtw0\kerning0
+https://github.com/MHaroonBaig...}}
+\f2\fs30 \cf8 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl420
+\cf8 \expnd0\expndtw0\kerning0
+My very own CoreMotion wrapper to make things a little bit easy.\
+\pard\tx560\pardeftab720\sl480\sa200
+
+\f0\fs32 \cf2 \expnd0\expndtw0\kerning0
+\
+\
+\pard\pardeftab720\sl420
+
+\f2\fs30 \cf8 \expnd0\expndtw0\kerning0
+Thanks for the excellent tutorial. Just thinking: wouldn't it be easier if you combine the plane and the shadow into one image? As that would cut the code size and save some processing effort in every moment. Unless you want to allow player to go higher or lower in altitude in the future - which you can then adjust the shadow size accordingly.\
+\
+Yes, indeen! However, with the shadow in another image you can play with the time, and if we go on a long trip with the airplane and the sun changes the shadow can create a nice effect. Thanks for the tip and the comment..\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl300
+\ls2\ilvl0\cf8 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl300
+\cf13 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl420
+
+\f0\fs32 \cf2 \expnd0\expndtw0\kerning0
+\
+\
+\pard\pardeftab720\sl420\sa300
+
+\f2\fs30 \cf8 \expnd0\expndtw0\kerning0
+No problem. It's an amazing question. I needed to think for a while.\
+If you look closely, when the newX and newY are calculated using the MIN and MAX methods, we use on X the maxY & minY and on Y the maxX & minX.\
+newX = MIN(MAX(newX+_plane.position.x,minY),maxY);\uc0\u8232 newY = MIN(MAX(newY+_plane.position.y,minX),maxX);\
+That's the reason. On the beginning we use the width and height backwards, However, during the calcs, we use the right values (backwards again for everything goes right).\
+\pard\pardeftab720\sl420
+\cf8 \expnd0\expndtw0\kerning0
+Your logic is right and make sense.\
+
+\f0\fs32 \cf2 \expnd0\expndtw0\kerning0
+\
+\
+
+\f2\fs30 \cf8 \expnd0\expndtw0\kerning0
+The propeller did not show up for me until I set its zPosition property. Any idea why this is the case?\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl300
+\ls3\ilvl0\cf8 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\ri860\sl300
+
+\fs26 \cf13 \expnd0\expndtw0\kerning0
+ \
+\pard\pardeftab720\ri860\sl360
+
+\fs24 \cf14 \expnd0\expndtw0\kerning0
+\'95
+\b\fs26 \cf15 \expnd0\expndtw0\kerning0
+Amrit
+\b0 \expnd0\expndtw0\kerning0
+ {\field{\*\fldinst{HYPERLINK "http://code.tutsplus.com/tutorials/build-an-airplane-game-with-sprite-kit-project-setup--mobile-19891#comment-1059548711"}}{\fldrslt 
+\f5\fs24 \cf16 \expnd0\expndtw0\kerning0
+ David}} 
+\fs24 \cf14 \expnd0\expndtw0\kerning0
+\'95
+\fs26 \cf15 \expnd0\expndtw0\kerning0
+ {\field{\*\fldinst{HYPERLINK "http://code.tutsplus.com/tutorials/build-an-airplane-game-with-sprite-kit-project-setup--mobile-19891#comment-1110743390"}}{\fldrslt 
+\f5\fs24 \cf16 \expnd0\expndtw0\kerning0
+2 years ago}}\uc0\u8232 
+\fs30 \cf8 \expnd0\expndtw0\kerning0
+i had the same problem initially regarding propeller not showing up but remembered having similar issue with cocos2d when learning that. it's all about the order you add the nodes. in this case if you added propeller before background then background would be 'on top' by default until z property is set. if you add it in after the bit of code that adds the background then you'll be fine but setting zPosition also does the trick.\uc0\u8232 \u8232 \u8232 \u8232 It's all about the order of the propeller in your code. Xcode by defaults increase the zPosition on the new elemets. If you add the propeller before background, the propeller will stay behind of the background. My advice is always use and manipulate the zPosition. That way, we have total control about which objects are behind or above.\
+\
+\
+\pard\pardeftab720\sl420
+\cf8 \expnd0\expndtw0\kerning0
+Wow, that is a subtle one. You're right, I did add the propeller before the background (and when I experimented with adding it after just now, I no longer needed to set the zPosition in order to see it). Thanks a lot for the info!\
+\pard\pardeftab720\ri860\sl360
+\cf8 \expnd0\expndtw0\kerning0
+\
+\
+\pard\pardeftab720\sl420
+\cf8 \expnd0\expndtw0\kerning0
+I decided to add another line, _propeller.zPosition = 3; this worked as well, at least for this step of the tutorial.\
+\
+\
+\
+\uc0\u8232 \u8232 }

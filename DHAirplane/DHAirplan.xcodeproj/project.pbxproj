@@ -17,6 +17,9 @@
 		352E276F1C86545900CB6AA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352E276D1C86545900CB6AA5 /* LaunchScreen.storyboard */; };
 		352E27881C87B3FE00CB6AA5 /* trail.sks in Resources */ = {isa = PBXBuildFile; fileRef = 352E27861C87B3FE00CB6AA5 /* trail.sks */; };
 		352E27891C87B3FE00CB6AA5 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 352E27871C87B3FE00CB6AA5 /* spark.png */; };
+		3542EEAC1C8900E0008E0CA8 /* introduce.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3542EEAB1C8900E0008E0CA8 /* introduce.rtf */; };
+		3542EEAF1C892430008E0CA8 /* Clouds.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 3542EEAD1C892430008E0CA8 /* Clouds.atlas */; };
+		3542EEB01C892430008E0CA8 /* EXPLOSION.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 3542EEAE1C892430008E0CA8 /* EXPLOSION.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		352E27701C86545900CB6AA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		352E27861C87B3FE00CB6AA5 /* trail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = trail.sks; sourceTree = "<group>"; };
 		352E27871C87B3FE00CB6AA5 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		3542EEAB1C8900E0008E0CA8 /* introduce.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = introduce.rtf; sourceTree = "<group>"; };
+		3542EEAD1C892430008E0CA8 /* Clouds.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Clouds.atlas; sourceTree = "<group>"; };
+		3542EEAE1C892430008E0CA8 /* EXPLOSION.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = EXPLOSION.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,7 @@
 		352E274E1C86545900CB6AA5 = {
 			isa = PBXGroup;
 			children = (
+				3542EEAB1C8900E0008E0CA8 /* introduce.rtf */,
 				352E27861C87B3FE00CB6AA5 /* trail.sks */,
 				352E27871C87B3FE00CB6AA5 /* spark.png */,
 				352E27591C86545900CB6AA5 /* DHAirplan */,
@@ -88,6 +95,8 @@
 		352E275A1C86545900CB6AA5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3542EEAD1C892430008E0CA8 /* Clouds.atlas */,
+				3542EEAE1C892430008E0CA8 /* EXPLOSION.atlas */,
 				352E275B1C86545900CB6AA5 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -150,7 +159,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3542EEAC1C8900E0008E0CA8 /* introduce.rtf in Resources */,
+				3542EEAF1C892430008E0CA8 /* Clouds.atlas in Resources */,
 				352E27641C86545900CB6AA5 /* GameScene.sks in Resources */,
+				3542EEB01C892430008E0CA8 /* EXPLOSION.atlas in Resources */,
 				352E27891C87B3FE00CB6AA5 /* spark.png in Resources */,
 				352E276F1C86545900CB6AA5 /* LaunchScreen.storyboard in Resources */,
 				352E276C1C86545900CB6AA5 /* Assets.xcassets in Resources */,
