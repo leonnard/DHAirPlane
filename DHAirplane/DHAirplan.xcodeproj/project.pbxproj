@@ -295,8 +295,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DHAirplan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.welab.DHAirplan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bezero.DHAirplan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "872f8f2b-9ee9-4d0c-9030-8804e3840257";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -307,8 +308,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DHAirplan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.welab.DHAirplan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bezero.DHAirplan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "872f8f2b-9ee9-4d0c-9030-8804e3840257";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
